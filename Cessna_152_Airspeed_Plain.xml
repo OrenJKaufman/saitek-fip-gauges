@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Gauge Name="Cessna 152 Airspeed Indicator - Plain" Version="1.0">
+  <Image Name="Cessna_152_Airspeed_Plain_Base.bmp" ImageSizes="305,240,305,240"/>
+  <Element>
+    <Position X="192" Y="117"/>
+    <Image Name="Cessna_152_Airspeed_Plain_Needle.bmp" ImageSizes="9,87,9,87">
+      <Axis X="0" Y="4"/>
+    </Image>
+    <Rotate>
+      <Value Minimum="0" Maximum="170">(A:Airspeed select indicated or true,knots)</Value>
+      <Failures>
+        <GAUGE_AIRSPEED Action="Freeze"/>
+      </Failures>
+      <Nonlinearity>
+        <Item Degrees="0" Value="0"/>
+        <Item Degrees="5" Value="30"/>
+        <Item Degrees="15" Value="40"/>
+        <Item Degrees="225" Value="100"/>
+        <Item Degrees="325" Value="150"/>
+        <Item Degrees="345" Value="170"/>
+      </Nonlinearity>
+    </Rotate>
+  </Element>
+</Gauge>
